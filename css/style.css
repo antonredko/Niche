@@ -7,4 +7,5 @@ html, body, .niche {
 }
 .niche {
     height: 1186px;
+    background: center center url(../img/niche-bgr.png);
 }
