@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, .niche {
+    width: 100%;
+}
+.niche {
+    height: 1186px;
+}
