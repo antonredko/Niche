@@ -5,7 +5,36 @@
 html, body, .niche {
     width: 100%;
 }
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
 .niche {
+    position: relative;
     height: 1186px;
-    background: center center url(../img/niche-bgr.png);
+    background: url(../img/niche-bgr.png);
+    display: flex;
+    align-items: center;
+}
+.alex {
+    position: absolute;
+    top: 108px;
+    right: 183px;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+.vertical-line {
+    width: 130px;
+    border-top: 1px solid #ffffff;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.nav>a {
+    margin: 5px 0;
+    text-align: right;
 }
