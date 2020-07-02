@@ -46,10 +46,10 @@ a {
 #to-get {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
-    width: 452px;
-    height: 377px;
+    width: 450px;
+    height: 374px;
     background: #313131;
     border-radius: 1em;
     -webkit-border-radius: 1em;
@@ -58,10 +58,11 @@ a {
     -o-border-radius: 1em;
 }
 input {
-    width: 360px;
+    width: 330px;
     cursor: pointer;
     border: none;
     background: #0a0a0a;
+    margin-bottom: 0.9em;
 }
 input[type='text'] {
     padding: 1.2em 1.7em;
@@ -70,6 +71,12 @@ input[type='text'] {
     -moz-border-radius: .7em;
     -ms-border-radius: .7em;
     -o-border-radius: .7em;
+}
+input::placeholder {
+    color: #868686;
+}
+input[type="button"] {
+    color: #ffffff;
 }
 
 
