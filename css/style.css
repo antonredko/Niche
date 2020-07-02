@@ -13,6 +13,7 @@ a {
     position: relative;
     height: 1186px;
     background: url(../img/niche-bgr.png);
+    background-position: center center;
 }
 .alex {
     position: absolute;
@@ -22,7 +23,6 @@ a {
 .title-and-form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     width: 550px;
 }
 .prog {
@@ -43,13 +43,19 @@ a {
     font-size: 1.7em;
     color: #ffffff;
 }
-#to-get {
+.prog, .choose-model, .to-get {
+    margin-left: 10px;
+    z-index: 1;
+}
+
+
+
+/*----------------------------- Форма -----------------------------*/
+.to-get {
+    width: 384px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-    align-items: center;
-    width: 450px;
-    height: 374px;
+    padding: 32px 32px 20px 32px;
     background: #313131;
     border-radius: 1em;
     -webkit-border-radius: 1em;
@@ -57,41 +63,68 @@ a {
     -ms-border-radius: 1em;
     -o-border-radius: 1em;
 }
+#form {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
 input {
-    width: 330px;
     cursor: pointer;
     border: none;
-    background: #0a0a0a;
-    margin-bottom: 0.9em;
 }
 input[type='text'] {
-    padding: 1.2em 1.7em;
+    padding: 19px 57px;
+    color: #ffffff;
+    background: #0a0a0a;
+    margin-bottom: 15px;
     border-radius: .7em;
     -webkit-border-radius: .7em;
     -moz-border-radius: .7em;
     -ms-border-radius: .7em;
     -o-border-radius: .7em;
 }
+input[name='tel'] {
+    margin-bottom: 26px;
+}
 input::placeholder {
     color: #868686;
-    margin-left: 100px;
 }
 input[name="name"] {
     background-image: url(../img/user_male.svg);
+}
+input[name="email"] {
+    background-image: url(../img/message.svg);
+}
+input[name="tel"] {
+    background-image: url(../img/phone1.svg);
+}
+input[name="name"], input[name="email"], input[name="tel"] {
     background-repeat: no-repeat;
-    background-size: 1.5em;
-    background-position: 1em center;
+    background-size: 16px;
+    background-position: 25px center;
 }
 input[type="button"] {
+    width: 100%;
+    padding: 27px 43px;
+    font-size: 1.1em;
     color: #ffffff;
+    background: #ff0000;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
+.only-this-week {
+    text-align: center;
+    margin-top: 19px;
+    color: #868686;
+}
+/*----------------------------- КОНЕЦ Формы -----------------------------*/
 
 
 
-
-
-
-
+/*----------------------------- Навигация -----------------------------*/
 .nav {
     display: flex;
     flex-direction: column;
@@ -128,3 +161,4 @@ input[type="button"] {
 .nav a.list-active::after {
     border: .2em solid #ffffff;
 }
+/*----------------------------- КОНЕЦ Навигации -----------------------------*/
