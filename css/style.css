@@ -74,6 +74,13 @@ input[type='text'] {
 }
 input::placeholder {
     color: #868686;
+    margin-left: 100px;
+}
+input[name="name"] {
+    background-image: url(../img/user_male.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position: 1em center;
 }
 input[type="button"] {
     color: #ffffff;
