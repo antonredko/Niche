@@ -1,1 +1,1 @@
-console.log(window.screen.width);
+console.log();
