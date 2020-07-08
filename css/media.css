@@ -204,7 +204,7 @@
     }
     .to-get {
         width: 90%;
-        margin-left: -1em;
+        align-self: center;
     }
     input {
         width: 80%;
@@ -230,6 +230,7 @@
     }
     #video {
         width: 90%;
+        height: 300px;
         padding: 1em;
     }
     .efforts {
@@ -418,7 +419,7 @@
         right: -8.2em;
     }
     input {
-        width: 67%;
+        width: 69%;
     }
     input[name="name"], input[name="email"], input[name="tel"] {
         background-size: 1.1em;
@@ -426,6 +427,7 @@
     }
     input[type='text'] {
         padding: 1.625em 5em;
+        margin-left: .1em;
     }
     input::placeholder {
         font-size: 1.2em;
@@ -436,17 +438,26 @@
     }
     .to-get {
         width: 88.5%;
-        margin-left: -1.15em;
+        margin-left: -1em;
         padding: 1.5em 1.5em 1.1em 1.5em;
+    }
+    #video {
+        width: 87%;
+        height: 260px;
+        padding: .5em;
     }
     .efforts {
         font-size: .8em;
     }
     iframe {
         height: 190px;
+        margin: .5em 0;
     }
     .want-to-know {
         font-size: .7em;
+    }
+    #video>.arrow {
+        bottom: .5em;
     }
 }
 @media screen and (max-width: 321px) {
@@ -472,14 +483,12 @@
     #video {
         width: 86%;
         height: 250px;
-        padding: .5em;
     }
     .efforts {
         font-size: .7em;
     }
     iframe {
         height: 160px;
-        margin: 0;
     }
     .want-to-know {
         font-size: .6em;
